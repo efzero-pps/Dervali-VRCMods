@@ -13,6 +13,7 @@ namespace NearClipPlaneAdj
     {
         public override void OnApplicationStart()
         {
+            ExpansionKitApi.RegisterSimpleMenuButton(ExpandedMenu.SettingsMenu, "Nearplane-0.05", (() => ChangeNearClipPlane(.05f)));
             ExpansionKitApi.RegisterSimpleMenuButton(ExpandedMenu.SettingsMenu, "Nearplane-0.01", (() => ChangeNearClipPlane(.01f)));
             ExpansionKitApi.RegisterSimpleMenuButton(ExpandedMenu.SettingsMenu, "Nearplane-0.001", (() => ChangeNearClipPlane(.001f)));
             ExpansionKitApi.RegisterSimpleMenuButton(ExpandedMenu.SettingsMenu, "Nearplane-0.0001", (() => ChangeNearClipPlane(.0001f)));
