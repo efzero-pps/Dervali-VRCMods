@@ -39,7 +39,7 @@ I would also recommend [CameraMinus](https://github.com/knah/VRCMods) for some o
 # VRC-RemoveChairs
 Very simple mod which adds an Enable and Disable Chairs button to the Worlds menu that will locally toggle all active chairs in a world. Useful for when map makers put chairs in inconvenient locations and don't have a way to disable them.
 
-![image](https://user-images.githubusercontent.com/68404726/97644178-a8977400-1a17-11eb-8cd9-f5390488325d.png)
+![image](https://user-images.githubusercontent.com/68404726/97644297-ec8a7900-1a17-11eb-90ea-5280b1a6a78a.png)
 
 # VRC-PlayerSpeedAdjSlower
 Did you ever want to move slower in game? This mod lets you do that! This is a very simple mod that uses [UIExpansionKit](https://github.com/knah/VRCMods/) to add three buttons to your settings menu. Default Speed, Half speed and 1/10 speed. 
