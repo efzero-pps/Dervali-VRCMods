@@ -27,6 +27,7 @@ VRChat will set this back to default every world change. However, thanks to help
 
 # VRC-CameraResChanger
 Another simple mod that does just one thing! This uses [UIExpansionKit](https://github.com/knah/V.RCMods/) to add a few buttons to your camera menu, allowing you to set the VRC camera resolution to, Default (1920x1080), 4K (3840x2160), 6k (5760x3240), 8k (7680x4320).
+
 ![image](https://user-images.githubusercontent.com/4786654/86955451-370c8080-c11d-11ea-8038-4b39c7c10979.png)
 
 Couple notes: 
@@ -36,9 +37,9 @@ Couple notes:
 I would also recommend [CameraMinus](https://github.com/knah/VRCMods) for some other camera QoL. 
 
 # VRC-RemoveChairs
-Very simple mod which adds a button to the left of your settings menu that will locally destroy all chairs in a world. Useful for when map makers put chairs in inconvenient locations and don't have a toggle to disable them! 
+Very simple mod which adds an Enable and Disable Chairs button to the Worlds menu that will locally toggle all active chairs in a world. Useful for when map makers put chairs in inconvenient locations and don't have a way to disable them.
 
-![image](https://user-images.githubusercontent.com/68404726/97511303-c5b73e80-1954-11eb-9526-ae7b02de3f27.png)
+![image](https://user-images.githubusercontent.com/68404726/97644178-a8977400-1a17-11eb-8cd9-f5390488325d.png)
 
 # VRC-PlayerSpeedAdjSlower
 Did you ever want to move slower in game? This mod lets you do that! This is a very simple mod that uses [UIExpansionKit](https://github.com/knah/VRCMods/) to add three buttons to your settings menu. Default Speed, Half speed and 1/10 speed. 
