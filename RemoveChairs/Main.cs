@@ -5,8 +5,9 @@ using MelonLoader;
 using UIExpansionKit.API;
 using UnityEngine;
 using VRC.SDKBase;
+using Boo.Lang;
 
-[assembly: MelonInfo(typeof(RemoveChairs.Main), "RemoveChairs", "1.0.0", "Nirvash")]
+[assembly: MelonInfo(typeof(RemoveChairs.Main), "RemoveChairs", "1.1.2", "Nirvash")]
 [assembly: MelonGame("VRChat", "VRChat")]
 
 
@@ -29,16 +30,47 @@ namespace RemoveChairs
         private IEnumerator CreateQuickMenuButton()
         {
                 while (QuickMenu.prop_QuickMenu_0 == null) yield return null;
-                ExpansionKitApi.RegisterSimpleMenuButton(ExpandedMenu.SettingsMenu, "Remove All Chairs", new Action(() =>
+               
+                ExpansionKitApi.RegisterSimpleMenuButton(ExpandedMenu.WorldMenu, "Disable Active Chairs", new Action(() =>
                 {
                     var objects = Resources.FindObjectsOfTypeAll<VRCStation>();
                     foreach (var item in objects)
                     {
-                        UnityEngine.Object.Destroy(item.gameObject); // item.gameObject finds the parent gameObject of the VRCStation 
-                        MelonLogger.Log("Destroyed chair object");
+                        if (item.gameObject.active) //Only disable active chairs
+                        {
+                            objectsDisabled.Add(item); 
+                            item.gameObject.SetActive(false); // item.gameObject finds the parent gameObject of the VRCStation 
+                            MelonLogger.Log("Disabled chair object");
+                        }
                     }
                 }));
+                ExpansionKitApi.RegisterSimpleMenuButton(ExpandedMenu.WorldMenu, "Re-enable Chairs", new Action(() =>
+                {
+                    foreach (var item in objectsDisabled)
+                    {
+                        item.gameObject.SetActive(true);
+                        MelonLogger.Log("Enabled chair object");
+                    }
+                    objectsDisabled.Clear();
+                }));
         }
+
+        List<VRCStation> objectsDisabled = new List<VRCStation>();
+
+        public override void OnLevelWasLoaded(int level)
+        {
+            
+            switch (level)//Without switch this would run 3 times at world load
+            {
+                case 0: //App
+                case 1: //ui
+                    break;
+                default:
+                    objectsDisabled.Clear(); //Clear the list if we change worlds 
+                    break;
+            }
+        }
+
 
     }
 }
