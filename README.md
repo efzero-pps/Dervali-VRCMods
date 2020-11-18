@@ -1,3 +1,11 @@
+# Crashing after the last VRChat Update?
+
+#### With the most recent VRChat update 1017 there are some conflicts between mods, mostly related to emmVRC. If you are crashing I recommend to try installing Advanced Safety https://github.com/knah/VRCMods/releases/tag/updates-2020-10-28 which seems to resolve the conflicts. Or removing one of the mods for the time being. 
+
+
+
+
+
 
 This is a collection of a few simple mods I have made. 
 They all require [Melon Loader](https://melonwiki.xyz/#/README?id=installation-on-il2cpp-games) and [UIExpansionKit](https://github.com/knah/VRCMods/)
@@ -19,7 +27,6 @@ Once you install the mod you should see three new options to the left of your Se
 ![Ingame Menu](https://user-images.githubusercontent.com/4786654/86502853-7b8acb80-bd6d-11ea-8d7f-94be7136abd0.png)
 
 I have not found any game breaking issues with using .0001 near plane distance, just some graphical artifacts in the distance, however .01 should always be safe to use as that is the normal minimum size Unity lets you use. 
-
 
 
 VRChat will set this back to default every world change. However, thanks to help from [forkbmb](https://github.com/forkbmb/nearclip) is mod will set the near plane clipping distance to .01 15 seconds after you load into a world.  (Reason for the delay is that we can't know exactly when the world's referenceCamera's settings are copied onto the player's camera)
