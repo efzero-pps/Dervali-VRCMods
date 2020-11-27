@@ -1,6 +1,6 @@
 # Crashing after the last VRChat Update?
 
-#### With the most recent VRChat update 1017 there are some conflicts between mods, mostly related to emmVRC. If you are crashing I recommend to try installing Advanced Safety https://github.com/knah/VRCMods/releases/tag/updates-2020-10-28 which seems to resolve the conflicts. Or removing one of the mods for the time being. 
+#### With the most recent VRChat update 1017 there are some conflicts between mods, mostly related to emmVRC. If you are crashing I recommend to try installing Advanced Safety https://github.com/knah/VRCMods/releases/tag/updates-2020-11-22  which seems to resolve the conflicts. Or removing one of the mods for the time being. 
 
 
 
