@@ -7,7 +7,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using Boo.Lang;
 
-[assembly: MelonInfo(typeof(RemoveChairs.Main), "RemoveChairs", "1.1.2", "Nirvash")]
+[assembly: MelonInfo(typeof(RemoveChairs.Main), "RemoveChairs", "1.1.5", "Nirvash")]
 [assembly: MelonGame("VRChat", "VRChat")]
 
 
