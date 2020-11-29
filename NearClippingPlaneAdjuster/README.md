@@ -21,3 +21,5 @@ Very rarely using .0001 near plane distance will stop you from being able to int
 
 
 VRChat will set this back to default every world change. This mod will set the near plane clipping distance to .01 15 seconds after you load into a world.  (Reason for the delay is that we can't know exactly when the world's referenceCamera's settings are copied onto the player's camera)
+
+Now adjusts the clipping plane on your photo camera thanks to an addition by tylerhasman.
