@@ -33,24 +33,28 @@ namespace RemoveChairs
                
                 ExpansionKitApi.RegisterSimpleMenuButton(ExpandedMenu.WorldMenu, "Disable Active Chairs", new Action(() =>
                 {
+                    int countChange = 0;
                     var objects = Resources.FindObjectsOfTypeAll<VRCStation>();
                     foreach (var item in objects)
                     {
                         if (item.gameObject.active) //Only disable active chairs
                         {
+                            countChange++;
                             objectsDisabled.Add(item); 
                             item.gameObject.SetActive(false); // item.gameObject finds the parent gameObject of the VRCStation 
-                            MelonLogger.Log("Disabled chair object");
                         }
                     }
+                    MelonLogger.Log("Disabled " + countChange + " chair objects");
                 }));
                 ExpansionKitApi.RegisterSimpleMenuButton(ExpandedMenu.WorldMenu, "Re-enable Chairs", new Action(() =>
                 {
+                    int countChange = 0;
                     foreach (var item in objectsDisabled)
                     {
+                        countChange++;
                         item.gameObject.SetActive(true);
-                        MelonLogger.Log("Enabled chair object");
                     }
+                    MelonLogger.Log("Enabled " + countChange + " chair objects");
                     objectsDisabled.Clear();
                 }));
         }
