@@ -31,6 +31,8 @@ Very rarely using .0001 near plane distance will stop you from being able to int
 
 VRChat will set this back to default every world change. This mod will set the near plane clipping distance to .01 15 seconds after you load into a world.  (Reason for the delay is that we can't know exactly when the world's referenceCamera's settings are copied onto the player's camera)
 
+Now adjusts the clipping plane on your photo camera thanks to an addition by tylerhasman.
+
 # VRC-CameraResChanger
 Another simple mod that does just one thing! This uses [UIExpansionKit](https://github.com/knah/V.RCMods/) to add a few buttons to your camera menu, allowing you to set the VRC camera resolution to, Default (1920x1080), 4K (3840x2160), 6k (5760x3240), 8k (7680x4320).
 
