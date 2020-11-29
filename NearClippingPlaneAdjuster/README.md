@@ -13,11 +13,11 @@ Note: This mod will not fix your menu breaking at small avatar sizes. However, t
 
 This mod requires [Melon Loader](/https://melonwiki.xyz/#/README?id=installation-on-il2cpp-games) and [UIExpansionKit](https://github.com/knah/VRCMods/)
 
-Once you install the mod you should see three new options to the left of your Settings menu. 
+Once you install the mod you should see new options to the left of your Settings menu. 
 
 ![Ingame Menu](https://user-images.githubusercontent.com/4786654/86502853-7b8acb80-bd6d-11ea-8d7f-94be7136abd0.png)
 
-I have not found any game breaking issues with using .0001 near plane distance, just some graphical artifacts in the distance, however .01 should always be safe to use as that is the normal minimum size Unity lets you use. 
+Very rarely using .0001 near plane distance will stop you from being able to interact with your menu, I have only ever seen this in a handful of worlds where the player location is far from the origin of the map. However .01 should always be safe to use as that is the normal minimum size Unity lets you use. 
 
 
-VRChat will set this back to default every world change. However, thanks to help from [forkbmb](https://github.com/forkbmb/nearclip) is mod will set the near plane clipping distance to .01 15 seconds after you load into a world.  (Reason for the delay is that we can't know exactly when the world's referenceCamera's settings are copied onto the player's camera)
+VRChat will set this back to default every world change. This mod will set the near plane clipping distance to .01 15 seconds after you load into a world.  (Reason for the delay is that we can't know exactly when the world's referenceCamera's settings are copied onto the player's camera)
